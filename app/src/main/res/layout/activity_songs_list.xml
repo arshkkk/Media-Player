@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SongsList">
+
+    <ListView
+        android:id="@+id/songsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controlButtons"        />
+
+    <LinearLayout
+        android:id="@+id/controlButtons"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/buttons_background_layout_bg"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+
+
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/previousOfSongList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/previous"
+            />
+        <ImageButton
+            android:id="@+id/playPauseOfSongList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/pause"
+            />
+        <ImageButton
+            android:id="@+id/nextOfSongList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
